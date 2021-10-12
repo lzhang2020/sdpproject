@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_options"
+        android:title="Options"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/menu_create_scramble"
+                android:title="Create Scramble" />
+            <item
+                android:id="@+id/menu_resume_scramble"
+                android:title="Resume Playing" />
+            <item
+                android:id="@+id/menu_view_stats"
+                android:title="Scramble Statistics" />
+            <item
+                android:id="@+id/menu_player_stats"
+                android:title="Player Statistics" />
+        </menu>
+    </item>
+</menu>

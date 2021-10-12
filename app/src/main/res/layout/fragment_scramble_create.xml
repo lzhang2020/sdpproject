@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="385dp"
+        android:layout_height="505dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:id="@+id/phrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Phrase:"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/phrase_message2"
+            android:layout_alignBottom="@+id/phrase_message2" />
+
+        <TextView
+            android:id="@+id/clue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/clue_message"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phrase"
+            android:layout_toStartOf="@+id/phrase_message2"
+            android:text="Clue:" />
+
+        <EditText
+            android:id="@+id/phrase_message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="35dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/clue_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phrase"
+            android:layout_toEndOf="@+id/phrase"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/scramble_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/scrambled_word"
+            android:layout_below="@+id/scrambled_word"
+            android:layout_marginTop="69dp"
+            android:onClick="handleClick"
+            android:text="Scramble"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/scrambled_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scramble_result"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/clue"
+            android:layout_toStartOf="@+id/clue_message"
+            android:text="Scrambled Word:" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scrambleInsertResult"
+            android:layout_alignEnd="@+id/scramble_result"
+            android:layout_marginEnd="29dp"
+            android:onClick="handleClick"
+            android:text="Accept"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/scrambleInsertResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scramble_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp" />
+
+        <TextView
+            android:id="@+id/scramble_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/clue_message"
+            android:layout_below="@+id/clue_message"
+            android:layout_toEndOf="@+id/clue" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

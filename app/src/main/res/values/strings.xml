@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SDPScramble</string>
+    <string name="content_authority">edu.gatech.seclass.sdpscramble</string>
+    <string name="action_options">Options</string>
+</resources>
